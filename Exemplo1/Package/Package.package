@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="d9adb4c5-d6d7-4ef1-ae71-958981136789" 
+        solutionId="d9adb4c5-d6d7-4ef1-ae71-958981136789" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Exemplo1"
+        sharePointProductVersion="19.0">
+</package>
