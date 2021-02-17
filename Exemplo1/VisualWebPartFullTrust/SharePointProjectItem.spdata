@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="VisualWebPartFullTrustUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="VisualWebPartFullTrust\" Type="ElementManifest" />
+    <ProjectItemFile Source="VisualWebPartFullTrust.webpart" Target="VisualWebPartFullTrust\" Type="ElementFile" />
+    <ProjectItemFile Source="VisualWebPartFullTrustUserControl.ascx" Target="CONTROLTEMPLATES\Exemplo1\VisualWebPartFullTrust\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Exemplo1.VisualWebPartFullTrust" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

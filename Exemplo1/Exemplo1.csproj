@@ -56,6 +56,13 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layouts\Exemplo1\AppPage.aspx.cs">
+      <DependentUpon>AppPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Exemplo1\AppPage.aspx.designer.cs">
+      <DependentUpon>AppPage.aspx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualWebPartBasica\VisualWebPart1.ascx.cs">
       <DependentUpon>VisualWebPart1.ascx</DependentUpon>
@@ -65,12 +72,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VisualWebPart1.ascx</DependentUpon>
     </Compile>
+    <Compile Include="VisualWebPartFullTrust\VisualWebPartFullTrust.cs" />
+    <Compile Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx.cs">
+      <DependentUpon>VisualWebPartFullTrustUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx.designer.cs">
+      <DependentUpon>VisualWebPartFullTrustUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\WebPartBasica\WebPartBasica.feature">
       <FeatureId>{4fed3e2a-00a8-4079-8cf1-cfa7d6d419e6}</FeatureId>
     </None>
     <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7e42367f-fe95-4b2f-af44-19b36c3400e0}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{d9adb4c5-d6d7-4ef1-ae71-958981136789}</PackageId>
     </None>
@@ -81,17 +99,24 @@
       <SharePointProjectItemId>{7c59687a-a092-413b-a03c-58ecadfff0a2}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPartBasica\VisualWebPart1.webpart" />
+    <None Include="VisualWebPartFullTrust\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e3287f5-b5df-4742-8695-7defadf5d3bb}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebPartFullTrust\VisualWebPartFullTrust.webpart" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\WebPartBasica\WebPartBasica.Template.xml">
+      <DependentUpon>WebPartBasica.feature</DependentUpon>
     </Content>
+    <Content Include="Layouts\Exemplo1\AppPage.aspx" />
     <Content Include="VisualWebPartBasica\Elements.xml" />
     <Content Include="VisualWebPartBasica\VisualWebPart1.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>VisualWebPart1.ascx.g.cs</LastGenOutput>
     </Content>
+    <Content Include="VisualWebPartFullTrust\Elements.xml" />
+    <Content Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
