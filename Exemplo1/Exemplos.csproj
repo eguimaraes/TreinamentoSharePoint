@@ -83,7 +83,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\WebPartBasica\WebPartBasica.feature">
+    <None Include="Features\ExemplosWebparts\ExemplosWebparts.feature">
       <FeatureId>{4fed3e2a-00a8-4079-8cf1-cfa7d6d419e6}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -107,8 +107,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\WebPartBasica\WebPartBasica.Template.xml">
-      <DependentUpon>WebPartBasica.feature</DependentUpon>
+    <Content Include="Features\ExemplosWebparts\ExemplosWebparts.Template.xml">
+      <DependentUpon>ExemplosWebparts.feature</DependentUpon>
     </Content>
     <Content Include="Layouts\Exemplo1\AppPage.aspx" />
     <Content Include="VisualWebPartRSS\Elements.xml" />

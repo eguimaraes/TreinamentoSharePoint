@@ -57,6 +57,7 @@ namespace Exemplo1.VisualWebPart1 {
             @__ctrl = new global::System.Web.UI.HtmlControls.HtmlGenericControl("div");
             this.frameBasico = @__ctrl;
             @__ctrl.ID = "frameBasico";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "container");
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n"));
             return @__ctrl;

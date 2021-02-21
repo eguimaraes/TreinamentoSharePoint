@@ -48,12 +48,20 @@ namespace Exemplo1.VisualWebPart1
 
         private void addNode(XmlNode node)
         {
-            Panel panel = new Panel();
-            panel.CssClass = "";
-            Label label = new Label();
-            label.Text = node["title"].InnerText;
-            panel.Controls.Add(label);
-            frameBasico.Controls.Add(panel);
+           
+
+            string imgSrc = node["media:thumbnail"].GetAttribute("url");
+            string htmlTemplate= "<div class=\"card w-25 mt-4\" style=\"float:left; height:500px;margin-right: 10px;\">" +
+                "<img class=\"card-img-top\" src=\""+ imgSrc + "\" alt=\"Card image cap\">" +
+                "<div class=\"card-body\">" +
+                "<h5 class=\"card-title\">"+ node["title"].InnerText + "</h5>" +
+                "<p class=\"card-text\">"+ node["title"].InnerText + "</p>" +
+                "<a href = \""+ node["link"].InnerText + "\" class=\"btn btn-primary\">Ler Artigo" +
+                "</a>" +
+                "</div>" +
+                "</div>";
+        
+            frameBasico.Controls.Add(new LiteralControl(htmlTemplate));
         }
 
         private static string GetRss()
