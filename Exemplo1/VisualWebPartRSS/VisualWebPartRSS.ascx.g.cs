@@ -59,7 +59,7 @@ namespace Exemplo1.VisualWebPart1 {
             @__ctrl.ID = "frameBasico";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "container");
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    <p class=\"h1\"> WebPart Basica consumindo um RSS Feed</p>\r\n\r\n"));
             return @__ctrl;
         }
         

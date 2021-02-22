@@ -51,12 +51,12 @@ namespace Exemplo1.VisualWebPart1
            
 
             string imgSrc = node["media:thumbnail"].GetAttribute("url");
-            string htmlTemplate= "<div class=\"card w-25 mt-4\" style=\"float:left; height:500px;margin-right: 10px;\">" +
-                "<img class=\"card-img-top\" src=\""+ imgSrc + "\" alt=\"Card image cap\">" +
+            string htmlTemplate= "<div class=\"card t-4 rounded \" style=\"float:left; height:500px;margin-right:10px;margin-bottom:10px;min-width:30%;width:30%;padding:0px\">" +
+                "<img class=\"card-img-top\" src=\"" + imgSrc + "\" alt=\"Card image cap\" style=\"margin:auto;height:200px\">" +
                 "<div class=\"card-body\">" +
                 "<h5 class=\"card-title\">"+ node["title"].InnerText + "</h5>" +
-                "<p class=\"card-text\">"+ node["title"].InnerText + "</p>" +
-                "<a href = \""+ node["link"].InnerText + "\" class=\"btn btn-primary\">Ler Artigo" +
+                "<p class=\"card-text\" style=\"min-height:60%\">"+ node["description"].InnerText + "</p>" +
+                "<a  href = \""+ node["link"].InnerText + "\" class=\"btn btn-danger  btn-lg\">Ler Artigo" +
                 "</a>" +
                 "</div>" +
                 "</div>";
