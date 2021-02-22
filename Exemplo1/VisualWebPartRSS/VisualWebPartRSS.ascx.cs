@@ -33,20 +33,24 @@ namespace Exemplo1.VisualWebPart1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            XmlDocument document = new XmlDocument();
-            document.LoadXml(GetRss());
-           XmlNodeList list= document.GetElementsByTagName("item");
-
-            foreach (XmlNode node  in list)
-            {
-                addNode(node);
-
-            }
-
+            renderRss("https://www.wired.com/feed/rss");
 
         }
 
-        private void addNode(XmlNode node)
+        private void renderRss(string rssUrl)
+        {
+            XmlDocument document = new XmlDocument();
+            document.LoadXml(GetRss(rssUrl));
+            XmlNodeList list = document.GetElementsByTagName("item");
+            foreach (XmlNode node in list)
+            {
+                Node2HTML(node);
+
+            }
+        }
+
+
+        private void Node2HTML(XmlNode node)
         {
            
 
@@ -64,9 +68,11 @@ namespace Exemplo1.VisualWebPart1
             frameBasico.Controls.Add(new LiteralControl(htmlTemplate));
         }
 
-        private static string GetRss()
+        
+
+        private static string GetRss(string Rssurl)
         {
-            WebRequest request = WebRequest.Create("https://www.wired.com/feed/rss");
+            WebRequest request = WebRequest.Create(Rssurl);
             request.Credentials = CredentialCache.DefaultCredentials;
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             string status = response.StatusDescription;
@@ -77,7 +83,6 @@ namespace Exemplo1.VisualWebPart1
             reader.Close();
             dataStream.Close();
             response.Close();
-
             return dados;
         }
     }
