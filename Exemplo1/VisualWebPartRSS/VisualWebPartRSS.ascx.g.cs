@@ -59,7 +59,7 @@ namespace Exemplo1.VisualWebPart1 {
             @__ctrl.ID = "frameBasico";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "container");
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    <p class=\"h1\"> WebPart Basica consumindo um RSS Feed</p>\r\n\r\n"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    <p class=\"h4\"> WebPart Basica consumindo um RSS Feed</p>\r\n\r\n"));
             return @__ctrl;
         }
         
@@ -84,6 +84,15 @@ namespace Exemplo1.VisualWebPart1 {
     <script src=""https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"" integrity=""sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"" crossorigin=""anonymous""></script>
     <script src=""https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"" integrity=""sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"" crossorigin=""anonymous""></script>
     -->
+
+<style>
+    #DeltaPlaceHolderPageTitleInTitleArea{
+        display:none;
+
+    }
+
+
+</style>
 "));
             global::System.Web.UI.HtmlControls.HtmlGenericControl @__ctrl1;
             @__ctrl1 = this.@__BuildControlframeBasico();

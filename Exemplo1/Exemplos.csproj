@@ -81,6 +81,7 @@
     <Compile Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx.designer.cs">
       <DependentUpon>VisualWebPartFullTrustUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebPartBasicaCSharp\WebPartBasica.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\ExemplosWebparts\ExemplosWebparts.feature">
@@ -104,6 +105,10 @@
       <SharePointProjectItemId>{9e3287f5-b5df-4742-8695-7defadf5d3bb}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPartFullTrust\VisualWebPartFullTrust.webpart" />
+    <None Include="WebPartBasicaCSharp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de9a728e-ab10-45bf-b9a3-83384d43294c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartBasicaCSharp\WebPartBasica.webpart" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -118,6 +123,7 @@
     </Content>
     <Content Include="VisualWebPartFullTrust\Elements.xml" />
     <Content Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx" />
+    <Content Include="WebPartBasicaCSharp\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

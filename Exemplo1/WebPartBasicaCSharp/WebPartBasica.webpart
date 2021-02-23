@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Exemplo1.WebPartBasica.WebPartBasica, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Exemplos - WebPartBasicaCSharp</property>
+        <property name="Description" type="string">Uma webPart Simples que mostra uso de C# em página</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

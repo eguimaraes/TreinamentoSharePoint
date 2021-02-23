@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WebPartBasicaCSharp" List="113" Url="_catalogs/wp">
+    <File Path="WebPartBasicaCSharp\WebPartBasica.webpart" Url="Exemplos_WebPartBasica.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="TreinamentoSharePoint" />
+    </File>
+  </Module>
+</Elements>
