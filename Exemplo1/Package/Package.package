@@ -2,8 +2,11 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d9adb4c5-d6d7-4ef1-ae71-958981136789" solutionId="d9adb4c5-d6d7-4ef1-ae71-958981136789" resetWebServer="false" sharePointProductVersion="19.0" name="Exemplo1" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="4fed3e2a-00a8-4079-8cf1-cfa7d6d419e6" />
+    <featureReference itemId="7ba9ca20-7f20-4f4c-991f-515c97361b11" />
+    <featureReference itemId="011892ce-82a3-4fa7-b9d4-e40610637998" />
   </features>
   <projectItems>
     <projectItemReference itemId="7e42367f-fe95-4b2f-af44-19b36c3400e0" />
+    <projectItemReference itemId="490735bf-e7d5-4c6d-b038-0cf8d6b8385c" />
   </projectItems>
 </package>

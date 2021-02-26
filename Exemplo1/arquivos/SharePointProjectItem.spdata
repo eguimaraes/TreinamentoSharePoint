@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="arquivos\" Type="ElementManifest" />
+    <ProjectItemFile Source="Sample.txt" Target="arquivos\" Type="ElementFile" />
+    <ProjectItemFile Source="cheatsheet.css" Target="arquivos\" Type="ElementFile" />
+    <ProjectItemFile Source="cheatsheet.js" Target="arquivos\" Type="ElementFile" />
+    <ProjectItemFile Source="cheatsheet.rtl.css" Target="arquivos\" Type="ElementFile" />
+    <ProjectItemFile Source="index.html" Target="arquivos\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

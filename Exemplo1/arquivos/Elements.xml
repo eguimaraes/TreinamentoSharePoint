@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="arquivos">
+    <File Path="arquivos\Sample.txt" Url="arquivos/Sample.txt" />
+    <File Path="arquivos\cheatsheet.css" Url="arquivos/cheatsheet.css" />
+    <File Path="arquivos\cheatsheet.js" Url="arquivos/cheatsheet.js" />
+    <File Path="arquivos\cheatsheet.rtl.css" Url="arquivos/cheatsheet.rtl.css" />
+    <File Path="arquivos\index.html" Url="arquivos/index.html" />
+  </Module>
+</Elements>

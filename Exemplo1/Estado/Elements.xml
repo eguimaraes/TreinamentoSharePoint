@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0a67763d-b72e-4b3d-ac53-4cec3314b38f}"
+       Name="EstadoMateria"
+       DisplayName="EstadoMateria"
+       Type="Text"
+       Required="FALSE"
+       Group="Exemplo - Materiais">
+  </Field>
+</Elements>

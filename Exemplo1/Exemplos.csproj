@@ -42,14 +42,21 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.16.0, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
@@ -57,12 +64,35 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartEx.cs" />
+    <Compile Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartExUserControl.ascx.cs">
+      <DependentUpon>BootstrapVisualWebPartExUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartExUserControl.ascx.designer.cs">
+      <DependentUpon>BootstrapVisualWebPartExUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcDif\CalcDif.cs" />
+    <Compile Include="ControlTemplates\Exemplos\MostraListas.ascx.cs">
+      <DependentUpon>MostraListas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Exemplos\MostraListas.ascx.designer.cs">
+      <DependentUpon>MostraListas.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\Exemplo1\AppPage.aspx.cs">
       <DependentUpon>AppPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Layouts\Exemplo1\AppPage.aspx.designer.cs">
       <DependentUpon>AppPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\boostrapExample.aspx.cs">
+      <DependentUpon>boostrapExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\boostrapExample.aspx.designer.cs">
+      <DependentUpon>boostrapExample.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualWebPartRSS\VisualWebPartRSS.ascx.cs">
@@ -81,21 +111,72 @@
     <Compile Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx.designer.cs">
       <DependentUpon>VisualWebPartFullTrustUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisualWebPartUserControls\VisualWebPartUserControls.cs" />
+    <Compile Include="VisualWebPartUserControls\VisualWebPartUserControlsUserControl.ascx.cs">
+      <DependentUpon>VisualWebPartUserControlsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebPartUserControls\VisualWebPartUserControlsUserControl.ascx.designer.cs">
+      <DependentUpon>VisualWebPartUserControlsUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebPartBasicaCSharp\WebPartBasica.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="arquivos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00a7a982-8590-49cb-9725-7cd041bdd0aa}</SharePointProjectItemId>
+    </None>
+    <None Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartEx.webpart" />
+    <None Include="BootstrapVisualWebPartEx\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{62fc02cf-454d-4e48-90c9-8cc6089f978b}</SharePointProjectItemId>
+    </None>
+    <None Include="CalcDif\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b415705b-e87a-4c2a-a524-2f6e2dfc0b15}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{490735bf-e7d5-4c6d-b038-0cf8d6b8385c}</SharePointProjectItemId>
+    </None>
+    <None Include="CriaItem\CriaItemInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02c3745b-6abd-4a32-ac29-43eec6ef1eb5}</SharePointProjectItemId>
+    </None>
+    <None Include="CriaItem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8876edd2-1701-46c9-8a07-94272071a27b}</SharePointProjectItemId>
+    </None>
+    <None Include="Estado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3db9191d-db06-482a-b2f0-f8f77947aedc}</SharePointProjectItemId>
+    </None>
     <None Include="Features\ExemplosWebparts\ExemplosWebparts.feature">
       <FeatureId>{4fed3e2a-00a8-4079-8cf1-cfa7d6d419e6}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{7ba9ca20-7f20-4f4c-991f-515c97361b11}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{011892ce-82a3-4fa7-b9d4-e40610637998}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e42367f-fe95-4b2f-af44-19b36c3400e0}</SharePointProjectItemId>
+    </None>
+    <None Include="Materiais\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c17340c6-16df-4c5f-88ec-2a20a28ad563}</SharePointProjectItemId>
+    </None>
+    <None Include="Medidas\MedidasInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ab9e1be-20fe-49d2-bd17-fdc9371a96c7}</SharePointProjectItemId>
+    </None>
+    <None Include="Medidas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c76772cc-cabc-48e1-8460-c420454318fc}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{d9adb4c5-d6d7-4ef1-ae71-958981136789}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="TabelaMateriais\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b39719d-f6a2-4dcd-9c53-9367e32a1698}</SharePointProjectItemId>
+    </None>
+    <None Include="TabelaMateriais\TabelaMateriaisInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23481e64-065a-4194-b533-49cea56fb437}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPartRSS\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7c59687a-a092-413b-a03c-58ecadfff0a2}</SharePointProjectItemId>
@@ -105,17 +186,54 @@
       <SharePointProjectItemId>{9e3287f5-b5df-4742-8695-7defadf5d3bb}</SharePointProjectItemId>
     </None>
     <None Include="VisualWebPartFullTrust\VisualWebPartFullTrust.webpart" />
+    <None Include="VisualWebPartUserControls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5a889e9b-8dd1-464b-9e88-01c0f932ba36}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebPartUserControls\VisualWebPartUserControls.webpart" />
     <None Include="WebPartBasicaCSharp\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{de9a728e-ab10-45bf-b9a3-83384d43294c}</SharePointProjectItemId>
     </None>
     <None Include="WebPartBasicaCSharp\WebPartBasica.webpart" />
+    <None Include="WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d9659ab1-2048-46ef-8513-1cf1a7a849f7}</SharePointProjectItemId>
+    </None>
+    <None Include="WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60fd79b1-b802-498d-a873-92573a2776c4}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Content Include="arquivos\cheatsheet.css" />
+    <Content Include="arquivos\cheatsheet.js" />
+    <Content Include="arquivos\cheatsheet.rtl.css" />
+    <Content Include="arquivos\Elements.xml" />
+    <Content Include="arquivos\index.html" />
+    <Content Include="arquivos\Sample.txt" />
+    <Content Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartExUserControl.ascx" />
+    <Content Include="BootstrapVisualWebPartEx\Elements.xml" />
+    <Content Include="CalcDif\Elements.xml" />
+    <Content Include="ControlTemplates\Exemplos\MostraListas.ascx" />
+    <Content Include="CriaItem\CriaItemInstance\Elements.xml" />
+    <Content Include="CriaItem\Elements.xml" />
+    <Content Include="CriaItem\Schema.xml" />
+    <Content Include="Estado\Elements.xml" />
     <Content Include="Features\ExemplosWebparts\ExemplosWebparts.Template.xml">
       <DependentUpon>ExemplosWebparts.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Layouts\Exemplo1\AppPage.aspx" />
+    <Content Include="Layouts\boostrapExample.aspx" />
+    <Content Include="Materiais\Elements.xml" />
+    <Content Include="Medidas\Elements.xml" />
+    <Content Include="Medidas\MedidasInstance\Elements.xml" />
+    <Content Include="Medidas\Schema.xml" />
+    <Content Include="TabelaMateriais\Elements.xml" />
+    <Content Include="TabelaMateriais\Schema.xml" />
+    <Content Include="TabelaMateriais\TabelaMateriaisInstance\Elements.xml" />
     <Content Include="VisualWebPartRSS\Elements.xml" />
     <Content Include="VisualWebPartRSS\VisualWebPartRSS.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
@@ -123,7 +241,11 @@
     </Content>
     <Content Include="VisualWebPartFullTrust\Elements.xml" />
     <Content Include="VisualWebPartFullTrust\VisualWebPartFullTrustUserControl.ascx" />
+    <Content Include="VisualWebPartUserControls\Elements.xml" />
+    <Content Include="VisualWebPartUserControls\VisualWebPartUserControlsUserControl.ascx" />
     <Content Include="WebPartBasicaCSharp\Elements.xml" />
+    <Content Include="WorkflowHistoryList\Elements.xml" />
+    <Content Include="WorkflowTaskList\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

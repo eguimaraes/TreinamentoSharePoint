@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01000AA80B2942A5495AA5C5FAB92A98538D" Name="Materiais" Group="Exemplo - Estado Materia" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{160563fc-de4d-4269-999a-7b84652bb3c9}" DisplayName="Temperatura Material" Required="FALSE" Name="TemperaturaMaterial" />
+      <FieldRef ID="{0a67763d-b72e-4b3d-ac53-4cec3314b38f}" DisplayName="EstadoMateria" Required="FALSE" Name="EstadoMateria" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
