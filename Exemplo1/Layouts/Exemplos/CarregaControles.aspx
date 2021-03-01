@@ -24,5 +24,5 @@ Application Page - Carrega Controle .NET
 </asp:Content>
 
 <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
-<p class="h5">Pagina de aplicação carregando controles .net</p>
+<p class="container h5">Pagina de aplicação carregando controles .net</p>
 </asp:Content>
