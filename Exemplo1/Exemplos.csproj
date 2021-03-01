@@ -64,6 +64,8 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BdcModel1\Entity1.cs" />
+    <Compile Include="BdcModel1\Entity1Service.cs" />
     <Compile Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartEx.cs" />
     <Compile Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartExUserControl.ascx.cs">
       <DependentUpon>BootstrapVisualWebPartExUserControl.ascx</DependentUpon>
@@ -139,6 +141,13 @@
     <None Include="arquivos\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{00a7a982-8590-49cb-9725-7cd041bdd0aa}</SharePointProjectItemId>
     </None>
+    <None Include="BdcModel1\BdcModel1.bdcm" />
+    <None Include="BdcModel1\BdcModel1.bdcm.diagram">
+      <DependentUpon>BdcModel1.bdcm</DependentUpon>
+    </None>
+    <None Include="BdcModel1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5135545-48c3-4d79-b272-4483c5f74e25}</SharePointProjectItemId>
+    </None>
     <None Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartEx.webpart" />
     <None Include="BootstrapVisualWebPartEx\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{62fc02cf-454d-4e48-90c9-8cc6089f978b}</SharePointProjectItemId>
@@ -170,6 +179,9 @@
     <None Include="Features\Feature3\Feature3.feature">
       <FeatureId>{c64122e6-7d08-4da7-a305-8bf5853c6912}</FeatureId>
     </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{bced8bfc-6278-4663-9946-8916ca4c7078}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e42367f-fe95-4b2f-af44-19b36c3400e0}</SharePointProjectItemId>
@@ -188,6 +200,9 @@
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteDefinition1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e4986e66-7f1e-4c38-a97e-5b554a753584}</SharePointProjectItemId>
     </None>
     <None Include="TabelaMateriais\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1b39719d-f6a2-4dcd-9c53-9367e32a1698}</SharePointProjectItemId>
@@ -246,6 +261,9 @@
     <Content Include="Features\Feature3\Feature3.Template.xml">
       <DependentUpon>Feature3.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
     <Content Include="Layouts\Exemplos\AppPage.aspx" />
     <Content Include="Layouts\Exemplos\boostrapExample.aspx" />
     <Content Include="Layouts\Exemplos\CarregaControles.aspx" />
@@ -253,6 +271,9 @@
     <Content Include="Medidas\Elements.xml" />
     <Content Include="Medidas\MedidasInstance\Elements.xml" />
     <Content Include="Medidas\Schema.xml" />
+    <Content Include="SiteDefinition1\default.aspx" />
+    <Content Include="SiteDefinition1\onet.xml" />
+    <Content Include="SiteDefinition1\webtemp_SiteDefinition1.xml" />
     <Content Include="TabelaMateriais\Elements.xml" />
     <Content Include="TabelaMateriais\Schema.xml" />
     <Content Include="TabelaMateriais\TabelaMateriaisInstance\Elements.xml" />
