@@ -73,26 +73,40 @@
       <DependentUpon>BootstrapVisualWebPartExUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="CalcDif\CalcDif.cs" />
-    <Compile Include="ControlTemplates\Exemplos\MostraListas.ascx.cs">
+    <Compile Include="ControlTemplates\Exemplo1\MostraListas.ascx.cs">
       <DependentUpon>MostraListas.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControlTemplates\Exemplos\MostraListas.ascx.designer.cs">
+    <Compile Include="ControlTemplates\Exemplo1\MostraListas.ascx.designer.cs">
       <DependentUpon>MostraListas.ascx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Exemplo1\AppPage.aspx.cs">
+    <Compile Include="ControlTemplates\Exemplos\UserControl1.ascx.cs">
+      <DependentUpon>UserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Exemplos\UserControl1.ascx.designer.cs">
+      <DependentUpon>UserControl1.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Exemplos\AppPage.aspx.cs">
       <DependentUpon>AppPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\Exemplo1\AppPage.aspx.designer.cs">
+    <Compile Include="Layouts\Exemplos\AppPage.aspx.designer.cs">
       <DependentUpon>AppPage.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\boostrapExample.aspx.cs">
+    <Compile Include="Layouts\Exemplos\boostrapExample.aspx.cs">
       <DependentUpon>boostrapExample.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\boostrapExample.aspx.designer.cs">
+    <Compile Include="Layouts\Exemplos\boostrapExample.aspx.designer.cs">
       <DependentUpon>boostrapExample.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Exemplos\CarregaControles.aspx.cs">
+      <DependentUpon>CarregaControles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Exemplos\CarregaControles.aspx.designer.cs">
+      <DependentUpon>CarregaControles.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualWebPartRSS\VisualWebPartRSS.ascx.cs">
@@ -153,6 +167,9 @@
     <None Include="Features\Feature2\Feature2.feature">
       <FeatureId>{011892ce-82a3-4fa7-b9d4-e40610637998}</FeatureId>
     </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{c64122e6-7d08-4da7-a305-8bf5853c6912}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e42367f-fe95-4b2f-af44-19b36c3400e0}</SharePointProjectItemId>
@@ -211,7 +228,8 @@
     <Content Include="BootstrapVisualWebPartEx\BootstrapVisualWebPartExUserControl.ascx" />
     <Content Include="BootstrapVisualWebPartEx\Elements.xml" />
     <Content Include="CalcDif\Elements.xml" />
-    <Content Include="ControlTemplates\Exemplos\MostraListas.ascx" />
+    <Content Include="ControlTemplates\Exemplo1\MostraListas.ascx" />
+    <Content Include="ControlTemplates\Exemplos\UserControl1.ascx" />
     <Content Include="CriaItem\CriaItemInstance\Elements.xml" />
     <Content Include="CriaItem\Elements.xml" />
     <Content Include="CriaItem\Schema.xml" />
@@ -225,8 +243,12 @@
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
-    <Content Include="Layouts\Exemplo1\AppPage.aspx" />
-    <Content Include="Layouts\boostrapExample.aspx" />
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Exemplos\AppPage.aspx" />
+    <Content Include="Layouts\Exemplos\boostrapExample.aspx" />
+    <Content Include="Layouts\Exemplos\CarregaControles.aspx" />
     <Content Include="Materiais\Elements.xml" />
     <Content Include="Medidas\Elements.xml" />
     <Content Include="Medidas\MedidasInstance\Elements.xml" />
