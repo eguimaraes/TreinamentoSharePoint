@@ -22,7 +22,7 @@ namespace RobotListas
 
                     foreach (SPList lista in listas)
                     {
-
+                        
 
                         Console.WriteLine(lista.Title);
 
