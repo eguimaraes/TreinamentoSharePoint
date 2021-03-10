@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCriaListas", "RobotCri
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POWERSHELL", "POWERSHELL", "{04202EA5-F1C6-47B1-9262-E8A663891FB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotResquest", "RobotResquest\RobotResquest.csproj", "{3E96C70C-DE43-4D09-BAE1-CE2C4D485C21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{96A39FB6-4A88-49BB-9669-D9B489ECA6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A39FB6-4A88-49BB-9669-D9B489ECA6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A39FB6-4A88-49BB-9669-D9B489ECA6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E96C70C-DE43-4D09-BAE1-CE2C4D485C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E96C70C-DE43-4D09-BAE1-CE2C4D485C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E96C70C-DE43-4D09-BAE1-CE2C4D485C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E96C70C-DE43-4D09-BAE1-CE2C4D485C21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
