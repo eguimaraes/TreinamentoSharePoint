@@ -182,6 +182,9 @@
     <None Include="Features\Feature4\Feature4.feature">
       <FeatureId>{bced8bfc-6278-4663-9946-8916ca4c7078}</FeatureId>
     </None>
+    <None Include="Features\Feature5\Feature5.feature">
+      <FeatureId>{bfda6d72-46b0-4ab0-b497-879169a79341}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e42367f-fe95-4b2f-af44-19b36c3400e0}</SharePointProjectItemId>
@@ -232,6 +235,9 @@
     <None Include="WorkflowTaskList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{60fd79b1-b802-498d-a873-92573a2776c4}</SharePointProjectItemId>
     </None>
+    <None Include="WorkflowTeste\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebf4e699-0f44-43e2-994b-5b37aad312ec}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="arquivos\cheatsheet.css" />
@@ -264,6 +270,9 @@
     <Content Include="Features\Feature4\Feature4.Template.xml">
       <DependentUpon>Feature4.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature5\Feature5.Template.xml">
+      <DependentUpon>Feature5.feature</DependentUpon>
+    </Content>
     <Content Include="Layouts\Exemplos\AppPage.aspx" />
     <Content Include="Layouts\Exemplos\boostrapExample.aspx" />
     <Content Include="Layouts\Exemplos\CarregaControles.aspx" />
@@ -289,6 +298,13 @@
     <Content Include="WebPartBasicaCSharp\Elements.xml" />
     <Content Include="WorkflowHistoryList\Elements.xml" />
     <Content Include="WorkflowTaskList\Elements.xml" />
+    <Content Include="WorkflowTeste\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="WorkflowTeste\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
