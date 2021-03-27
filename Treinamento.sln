@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotResquest", "RobotResqu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCriaCampo", "RobotCriaCampo\RobotCriaCampo.csproj", "{F27A68ED-8620-4EFA-B4CF-95D278A1EC92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCarga", "ConsoleApp1\RobotCarga.csproj", "{AF6BDB23-1026-4CDF-8367-5726020D997E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotClientSidecarga", "RobotClientSidecarga\RobotClientSidecarga.csproj", "{13BFCD12-9F20-4AFB-9711-3C60543904A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{F27A68ED-8620-4EFA-B4CF-95D278A1EC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F27A68ED-8620-4EFA-B4CF-95D278A1EC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F27A68ED-8620-4EFA-B4CF-95D278A1EC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6BDB23-1026-4CDF-8367-5726020D997E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6BDB23-1026-4CDF-8367-5726020D997E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6BDB23-1026-4CDF-8367-5726020D997E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6BDB23-1026-4CDF-8367-5726020D997E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BFCD12-9F20-4AFB-9711-3C60543904A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BFCD12-9F20-4AFB-9711-3C60543904A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BFCD12-9F20-4AFB-9711-3C60543904A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BFCD12-9F20-4AFB-9711-3C60543904A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
