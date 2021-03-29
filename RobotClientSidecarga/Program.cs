@@ -15,10 +15,10 @@ namespace RobotClientSidecarga
         {
 
                       
-            using (ClientContext clientContext = new ClientContext("urldosite")) { 
-                       
+            using (ClientContext clientContext = new ClientContext("urldosite")) {
 
-            clientContext.Credentials = new NetworkCredential("user", "passwordex")
+
+                clientContext.Credentials = new NetworkCredential("user", "passwordex");
 
 
             Web site = clientContext.Web;

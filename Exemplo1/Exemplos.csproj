@@ -111,6 +111,19 @@
       <DependentUpon>CarregaControles.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="traducao\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="traducao\traducao.ascx.cs">
+      <DependentUpon>traducao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="traducao\traducao.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traducao.ascx</DependentUpon>
+    </Compile>
     <Compile Include="VisualWebPartRSS\VisualWebPartRSS.ascx.cs">
       <DependentUpon>VisualWebPartRSS.ascx</DependentUpon>
     </Compile>
@@ -213,6 +226,10 @@
     <None Include="TabelaMateriais\TabelaMateriaisInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{23481e64-065a-4194-b533-49cea56fb437}</SharePointProjectItemId>
     </None>
+    <None Include="traducao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30e4ebda-6476-44dc-a4f1-dc5f0a8a9789}</SharePointProjectItemId>
+    </None>
+    <None Include="traducao\traducao.webpart" />
     <None Include="VisualWebPartRSS\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7c59687a-a092-413b-a03c-58ecadfff0a2}</SharePointProjectItemId>
     </None>
@@ -286,6 +303,11 @@
     <Content Include="TabelaMateriais\Elements.xml" />
     <Content Include="TabelaMateriais\Schema.xml" />
     <Content Include="TabelaMateriais\TabelaMateriaisInstance\Elements.xml" />
+    <Content Include="traducao\Elements.xml" />
+    <Content Include="traducao\traducao.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>traducao.ascx.g.cs</LastGenOutput>
+    </Content>
     <Content Include="VisualWebPartRSS\Elements.xml" />
     <Content Include="VisualWebPartRSS\VisualWebPartRSS.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
@@ -305,6 +327,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="traducao\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
