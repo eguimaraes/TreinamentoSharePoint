@@ -17,11 +17,10 @@ namespace RobotResquest
     {
         static void Main(string[] args)
         {
-                        
-            string endpont = args[0];
+                 
+              string endpont = "args[0]";
 
-            string postData =args[1];
-
+            string postData = new StreamReader(args[1]).ReadToEnd();
 
             
             WebRequest request = WebRequest.Create(endpont);

@@ -27,7 +27,7 @@ namespace Exemplo1.traducao
         {
             string BomDia = "Bom Dia";
 
-            ResourceManager resourceManager = new ResourceManager("Resource.resx");
+           
 
         }
     }
