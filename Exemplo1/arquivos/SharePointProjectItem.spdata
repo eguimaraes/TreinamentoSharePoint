@@ -7,5 +7,6 @@
     <ProjectItemFile Source="cheatsheet.js" Target="arquivos\" Type="ElementFile" />
     <ProjectItemFile Source="cheatsheet.rtl.css" Target="arquivos\" Type="ElementFile" />
     <ProjectItemFile Source="index.html" Target="arquivos\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="arquivos\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -56,6 +56,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -110,6 +111,7 @@
     <Compile Include="Layouts\Exemplos\CarregaControles.aspx.designer.cs">
       <DependentUpon>CarregaControles.aspx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\Exemplos\service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="traducao\Resource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -180,23 +182,14 @@
     <None Include="Estado\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3db9191d-db06-482a-b2f0-f8f77947aedc}</SharePointProjectItemId>
     </None>
-    <None Include="Features\ExemplosWebparts\ExemplosWebparts.feature">
-      <FeatureId>{4fed3e2a-00a8-4079-8cf1-cfa7d6d419e6}</FeatureId>
+    <None Include="Features\exemplos\exemplos.feature">
+      <FeatureId>{4b49fc21-222a-40af-a84c-b5678897a2fa}</FeatureId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{7ba9ca20-7f20-4f4c-991f-515c97361b11}</FeatureId>
+      <FeatureId>{d4728590-6451-470d-8fd1-56342e266003}</FeatureId>
     </None>
     <None Include="Features\Feature2\Feature2.feature">
-      <FeatureId>{011892ce-82a3-4fa7-b9d4-e40610637998}</FeatureId>
-    </None>
-    <None Include="Features\Feature3\Feature3.feature">
-      <FeatureId>{c64122e6-7d08-4da7-a305-8bf5853c6912}</FeatureId>
-    </None>
-    <None Include="Features\Feature4\Feature4.feature">
-      <FeatureId>{bced8bfc-6278-4663-9946-8916ca4c7078}</FeatureId>
-    </None>
-    <None Include="Features\Feature5\Feature5.feature">
-      <FeatureId>{bfda6d72-46b0-4ab0-b497-879169a79341}</FeatureId>
+      <FeatureId>{724908a9-4b45-42ca-ae96-d483cc4d3d07}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
@@ -219,6 +212,9 @@
     </None>
     <None Include="SiteDefinition1\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e4986e66-7f1e-4c38-a97e-5b554a753584}</SharePointProjectItemId>
+    </None>
+    <None Include="STYLES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f47334a4-2fed-4511-a048-1396a10c3dca}</SharePointProjectItemId>
     </None>
     <None Include="TabelaMateriais\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1b39719d-f6a2-4dcd-9c53-9367e32a1698}</SharePointProjectItemId>
@@ -257,6 +253,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="arquivos\angular.min.js" />
     <Content Include="arquivos\cheatsheet.css" />
     <Content Include="arquivos\cheatsheet.js" />
     <Content Include="arquivos\cheatsheet.rtl.css" />
@@ -272,8 +269,8 @@
     <Content Include="CriaItem\Elements.xml" />
     <Content Include="CriaItem\Schema.xml" />
     <Content Include="Estado\Elements.xml" />
-    <Content Include="Features\ExemplosWebparts\ExemplosWebparts.Template.xml">
-      <DependentUpon>ExemplosWebparts.feature</DependentUpon>
+    <Content Include="Features\exemplos\exemplos.Template.xml">
+      <DependentUpon>exemplos.feature</DependentUpon>
     </Content>
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
@@ -281,18 +278,11 @@
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
-    <Content Include="Features\Feature3\Feature3.Template.xml">
-      <DependentUpon>Feature3.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\Feature4\Feature4.Template.xml">
-      <DependentUpon>Feature4.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\Feature5\Feature5.Template.xml">
-      <DependentUpon>Feature5.feature</DependentUpon>
-    </Content>
+    <Content Include="Layouts\Exemplos\angular.min.js" />
     <Content Include="Layouts\Exemplos\AppPage.aspx" />
     <Content Include="Layouts\Exemplos\boostrapExample.aspx" />
     <Content Include="Layouts\Exemplos\CarregaControles.aspx" />
+    <Content Include="Layouts\Exemplos\service.asmx" />
     <Content Include="Materiais\Elements.xml" />
     <Content Include="Medidas\Elements.xml" />
     <Content Include="Medidas\MedidasInstance\Elements.xml" />
@@ -300,6 +290,7 @@
     <Content Include="SiteDefinition1\default.aspx" />
     <Content Include="SiteDefinition1\onet.xml" />
     <Content Include="SiteDefinition1\webtemp_SiteDefinition1.xml" />
+    <Content Include="STYLES\angular.min.js" />
     <Content Include="TabelaMateriais\Elements.xml" />
     <Content Include="TabelaMateriais\Schema.xml" />
     <Content Include="TabelaMateriais\TabelaMateriaisInstance\Elements.xml" />

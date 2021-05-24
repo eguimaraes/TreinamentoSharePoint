@@ -1,0 +1,1 @@
+﻿<%@ WebService Class="Exemplo1.Layouts.Exemplos.service, Exemplo1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1e087efb415865f8" %>
